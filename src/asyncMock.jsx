@@ -103,7 +103,7 @@ const products = [
         name: 'Estabilizador negro x8 plano',
         price: 15000,
         category: 'Estabilizador',
-        img: 'https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-7349417.jpg',
+        img: 'https://mesajil.com/wp-content/uploads/2023/02/15571-1.jpg',
         stock: 4,
         description: 'Estabilizador negro, con 8 entradas planas.'
     },
