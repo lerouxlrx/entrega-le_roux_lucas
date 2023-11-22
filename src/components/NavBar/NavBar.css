@@ -1,0 +1,9 @@
+.colorTexto {
+    color: #e8c3a4 !important;
+    
+}
+.carritoNav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,23 @@
+.containerEjec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloCount{
+    color: #56451c;
+}
+
+.numeroCount {
+    color: #56451c;
+    padding: 0px 15px;
+}
+
+.btnCount {
+    background-color: #063971;
+    color: #e8c3a4;
+    border: none;
+} 
+.btnCount:hover {
+    background-color: #0a497b;
+}
