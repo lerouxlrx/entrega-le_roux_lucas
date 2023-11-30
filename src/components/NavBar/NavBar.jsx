@@ -18,6 +18,8 @@ import Button from '@mui/material/Button';
 import CartWidget from "../CartWidget/CartWidget"
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+import { NavLink, Link } from 'react-router-dom';
+
 const theme = createTheme({
   breakpoints: {
     values: {
@@ -31,7 +33,7 @@ const theme = createTheme({
 });
 
 const drawerWidth = 240;
-const navItems = ['Alarges', 'Adaptadores', 'Zapatillas', 'Estabilizadores', 'UPS' ];
+const navItems = ['Alargues', 'Adaptadores', 'Zapatillas', 'Estabilizadores', 'UPS' ];
 
 function NavBar(props) {
   const { window } = props;
@@ -70,15 +72,15 @@ function NavBar(props) {
             <Typography
               variant="h6"
               component="div"
-              className='colorTexto'
-              sx={{ flexGrow: 1, textAlign: 'left', display: { xs: 'block', sm: 'block' } }}
-            >
+              sx={{ flexGrow: 1, textAlign: 'left', display: { xs: 'block', sm: 'block' } }}>
+              <Link to='/' className='colorTexto'>
               Teccomerce
+              </Link>
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'none', md: 'block', lg: 'block' } }}>
               {navItems.map((item) => (
-                <Button key={item} className='colorTexto'>
-                  {item}
+                <Button key={item}>
+                  <NavLink  className='colorTexto' to={`/category/${item}`}>{item}</NavLink>
                 </Button>
               ))}
             </Box>

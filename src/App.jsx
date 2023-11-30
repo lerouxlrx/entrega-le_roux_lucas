@@ -1,17 +1,24 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import {
   NavBar,
   ItemListContainer,
-  ItemCount,
+  ItemDetailContainer,
 } from "./components";
 
 function App() {
 
   return (
       <div className = "App">
-        <NavBar />
-        <ItemListContainer slogan={'Mantenete Encendido'}/>
-        <ItemCount initial={0} stock={10} onAdd={(quantity) => console.log('Productos agregados: ',quantity)}/>
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<ItemListContainer slogan={'Mantenete Encendido'}/>} /> 
+            <Route path='/category/:categoryId' element={<ItemListContainer slogan={'Mantenete Encendido'}/>} /> 
+            <Route path='/item/:itemId' element={<ItemDetailContainer />} /> 
+            <Route path='*' element={<h1>404 NOT FOUND</h1>} />
+          </Routes>
+        </BrowserRouter>
       </div>
   )
 }

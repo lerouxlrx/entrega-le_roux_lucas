@@ -1,0 +1,26 @@
+.ItemDetailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.CardItemFilter {
+    width: 75%;
+    border: none;
+    background-color: #d7dbe2;
+    padding: 10px;
+    align-items: center;
+}
+
+.ContainerImgFilter {
+    width: 60%;
+}
+
+.InfoFilter {
+    color: #00725f;
+}
+
+.InfoCategoryFilter {
+    text-decoration: underline;
+}

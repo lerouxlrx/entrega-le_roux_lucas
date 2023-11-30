@@ -42,10 +42,15 @@
 
 .Option {
     background-color: #1d334a;
-    color: #d7dbe2;
     border: none;
+}
+.OptionText {
+    color: #d7dbe2;
 }
 
 .Option:hover{
     background-color: #5d9b9b;
+}
+.OptionText:hover {
+    color: #d7dbe2;
 }

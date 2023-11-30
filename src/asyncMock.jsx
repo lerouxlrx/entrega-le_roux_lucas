@@ -84,8 +84,8 @@ const products = [
         id: '10',
         name: 'Estabilizador retro x6',
         price: 15000,
-        category: 'Estabilizador',
-        img: 'https://paternalsrl.com.ar/wp-content/uploads/2023/06/D_633011-MLA41888694824_052020-F.jpg',
+        category: 'Estabilizadores',
+        img: 'https://www.mylshop.com.ar/wp-content/uploads/2019/08/Estabilizador-de-tension-unico-6-tomas-Atomlux-01.jpg',
         stock: 2,
         description: 'Estabilizador estilo retro, con 6 entradas.'
     },
@@ -93,7 +93,7 @@ const products = [
         id: '11',
         name: 'Estabilizador negro x4',
         price: 10000,
-        category: 'Estabilizador',
+        category: 'Estabilizadores',
         img: 'https://app.contabilium.com/files/explorer/7026/Productos-Servicios/concepto-7349417.jpg',
         stock: 10,
         description: 'Estabilizador negro, con 4 entradas.'
@@ -102,7 +102,7 @@ const products = [
         id: '12',
         name: 'Estabilizador negro x8 plano',
         price: 15000,
-        category: 'Estabilizador',
+        category: 'Estabilizadores',
         img: 'https://mesajil.com/wp-content/uploads/2023/02/15571-1.jpg',
         stock: 4,
         description: 'Estabilizador negro, con 8 entradas planas.'
@@ -132,5 +132,21 @@ export const getProducts = () => {
         setTimeout(() =>{
             resolve(products)
         },500)
+    })
+}
+
+export const getProductsById = (productId) => {
+    return new Promise ((resolve) => {
+        setTimeout (() => {
+            resolve(products.find(prod => prod.id === productId))
+        }, 500)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise ((resolve) => {
+        setTimeout (() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+        }, 500)
     })
 }
