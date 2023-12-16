@@ -1,3 +1,4 @@
+export {default as Cart} from './Cart/Cart';
 export { default as CartWidget } from './CartWidget/CartWidget';
 export { default as Item } from './Item/Item';
 export { default as ItemCount } from './ItemCount/ItemCount';

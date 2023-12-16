@@ -1,0 +1,46 @@
+.CartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+    height: 100px;
+}
+
+.CartHeader {
+    flex-basis: 30%;
+}
+
+.CartHeaderText {
+    margin: 0;
+}
+
+.CartUni {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+
+.PrecioUni,
+.CantidadUni {
+    flex-basis: 48%;
+    margin: 0;
+}
+
+.PrecioSubTotal,
+.EliminarItem {
+    flex-basis: 20%;
+    margin: 0;
+}
+
+.BtnEliminarItem {
+    background-color: #c51d34;
+    color: #d7dbe2;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+}

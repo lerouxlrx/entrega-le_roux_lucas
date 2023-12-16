@@ -6,4 +6,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #e8c3a4 !important;
+}
+
+.logo Link {
+    color: #e8c3a4 !important;
 }
