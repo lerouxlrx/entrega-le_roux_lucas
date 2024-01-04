@@ -1,6 +1,6 @@
 import './ItemDetailContainer.css'
 import { useState, useEffect } from "react"
-import { getProductsById } from "../../asyncMock"
+
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { db } from "../../firebase/client";
 import {getDoc, doc} from 'firebase/firestore'

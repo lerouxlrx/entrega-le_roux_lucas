@@ -17,6 +17,11 @@
     margin: 0;
 }
 
+.CartDatos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .CartUni {
     display: flex;
     flex-basis: 40%;

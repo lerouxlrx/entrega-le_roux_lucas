@@ -3,12 +3,12 @@ import './CartItem.css'
 const CartItem = ({id, name, price, quantity}) => {
     return (
         <article className="CartItem">
-            <header className="CartHeader">
+            <div className="CartHeader">
                 <h3 className="CartHeaderText">
                     {name}
                 </h3>
-            </header>
-            <body>
+            </div>
+            <div className='CartDatos'>
                 <section className="CartUni">
                     <p className="PrecioUni">
                         Precio ${price}
@@ -27,7 +27,7 @@ const CartItem = ({id, name, price, quantity}) => {
                         Eliminar
                     </button>
                 </section>
-            </body>
+            </div>
         </article>
     )
 }
