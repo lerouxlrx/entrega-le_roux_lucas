@@ -1,0 +1,34 @@
+.headingCheck {
+    font-size: 32px;
+    margin: 10px;
+    color: #173c5b;
+}
+
+.holderForm {
+    width: 300px;
+    font-size: 24px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #d7dbe2;
+    color: #173c5b;
+    border: none;
+}
+.holderForm::placeholder {
+    color: #5d9b9b;
+  }
+.holderBtn {
+    width: 250px;
+    font-size: 24px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #173c5b;
+    color: #d7dbe2;
+    border: none;
+}
+
+.holderBtn:hover {
+    background-color: #000080;
+}
+

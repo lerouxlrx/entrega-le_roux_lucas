@@ -1,3 +1,4 @@
+import './CheckOut.css'
 import React, { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 import { useForm } from "react-hook-form";
@@ -36,10 +37,10 @@ const Checkout = () => {
 
   return (
     <VStack spacing={4} align="center">
-      <Heading>Completa los datos para finalizar tu compra de ${calcularTotal()}</Heading>
+      <Heading className='headingCheck'>Completa los datos para finalizar tu compra de ${calcularTotal()}</Heading>
       <form onSubmit={handleSubmit(comprar)}>
         <FormControl>
-          <Input
+          <Input className='holderForm'
             type="text"
             placeholder="Ingresa tu nombre"
             {...register("nombre", { required: true })}
@@ -47,7 +48,7 @@ const Checkout = () => {
         </FormControl>
 
         <FormControl>
-          <Input
+          <Input className='holderForm'
             type="email"
             placeholder="Ingresa tu e-mail"
             {...register("email", { required: true })}
@@ -55,14 +56,14 @@ const Checkout = () => {
         </FormControl>
 
         <FormControl>
-          <Input
+          <Input className='holderForm'
             type="tel"
             placeholder="Ingresa tu teléfono"
             {...register("telefono", { required: true })}
           />
         </FormControl>
 
-        <Button type="submit">Comprar</Button>
+        <Button className='holderBtn' type="submit" >Comprar</Button>
       </form>
     </VStack>
   );
